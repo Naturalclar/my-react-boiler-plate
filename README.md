@@ -4,8 +4,13 @@ Yet another one out of the millions of react-redux-boilerplates that exists out 
 
 ## Usage
 
+- Clone Repository
+
+`https://github.com/Naturalclar/my-react-boiler-plate.git project-name`
+
 - Install dependencies
 
+`cd project-name`
 `yarn install`
 
 - Build File
@@ -16,22 +21,30 @@ Yet another one out of the millions of react-redux-boilerplates that exists out 
 
 `yarn start`
 
+You can access your project by accessing `localhost:3000` on your browser.
+
 ## What's in this boilerplate?
 
 ### FrontEnd
-- React
+- [React](https://reactjs.org/)
 
-### BackEnd
-- Express.js
+### BackEnd API
+- [Express.js](https://expressjs.com/)
 
 ### State Handling
-- Redux
+- [Redux](https://redux.js.org/)
+
+### Routing
+- [React-Router](https://reacttraining.com/react-router/)
 
 ### Style
-- Radium
-- PostCSS
+- [Radium](https://formidable.com/open-source/radium/)
+- [PostCSS](http://postcss.org/)
 (You don't need both, I know)
 
 ### Testing
-- Jest
-- Enzyme
+- [Jest](https://facebook.github.io/jest/)
+- [Enzyme](http://airbnb.io/enzyme/)
+
+### Bundler
+- [Webpack](https://webpack.js.org/)
