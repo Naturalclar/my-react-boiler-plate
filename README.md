@@ -6,7 +6,7 @@ Yet another one out of the millions of react-redux-boilerplates that exists out 
 
 - Clone Repository
 
-`https://github.com/Naturalclar/my-react-boiler-plate.git project-name`
+`git clone https://github.com/Naturalclar/my-react-boiler-plate.git project-name`
 
 - Install dependencies
 
