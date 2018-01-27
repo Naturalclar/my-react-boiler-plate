@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "React-Redux Boiler Plate",
   "repository": "https://github.com/Naturalclar/my-react-boiler-plate.git",
-  "main": "index.js",
+  "main": "server/index.js",
   "author": "Jesse Katsumata",
   "license": "MIT",
   "scripts": {
