@@ -49,7 +49,6 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'DoorDash FrontEnd Project',
       template: 'src/index.html',
     }),
   ],
