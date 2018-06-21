@@ -1,2 +1,2 @@
-export { default as Header } from './_Header.jsx';
-export { default as Footer } from './_Footer.jsx';
+export { default as Header } from './Header';
+export { default as Footer } from './Footer';

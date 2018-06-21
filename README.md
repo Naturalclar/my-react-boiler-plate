@@ -37,10 +37,8 @@ You can access your project by accessing `localhost:3000` on your browser.
 ### Routing
 - [React-Router](https://reacttraining.com/react-router/)
 
-### Style
-- [Radium](https://formidable.com/open-source/radium/)
-- [PostCSS](http://postcss.org/)
-(You don't need both, I know)
+### Styling
+- [Styled-Components](https://www.styled-components.com/)
 
 ### Testing
 - [Jest](https://facebook.github.io/jest/)

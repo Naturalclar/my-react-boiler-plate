@@ -1,21 +1,31 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { StyleRoot } from 'radium';
+import styled from 'styled-components';
 import { Header, Footer } from './components';
-import { Home } from './views/index.js';
-import { app } from './styles';
+import { Home } from './views';
+
+const Container = styled.div`
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+ 
+const Main = styled.main`
+  flex: 1;
+  padding-bottom: 2rem;
+`;
 
 const App = () => (
   <Router>
-    <StyleRoot>
-      <div style={app.main}>
-        <Header title="React-Boilerplate" />
+    <Container>
+      <Header title="React-Boilerplate" />
+      <Main>
         <Switch>
           <Route exact path="/" component={Home} />
         </Switch>
-        <Footer />
-      </div>
-    </StyleRoot>
+      </Main>
+      <Footer />
+    </Container>
   </Router>
 );
 
