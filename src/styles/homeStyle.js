@@ -9,9 +9,9 @@ const homeStyles = {
     filter: 'invert(.5)',
     ':hover': {
       filter: 'invert(.5) sepia(1) saturate(5) hue-rotate(180deg)',
-      transform: 'translateY(-1px)'
-    }
-  }
-};
+      transform: 'translateY(-1px)',
+    },
+  },
+}
 
-export default homeStyles;
+export default homeStyles
