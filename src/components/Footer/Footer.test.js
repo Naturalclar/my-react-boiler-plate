@@ -1,7 +1,8 @@
-import React from 'react';
-import { shallow } from 'enzyme';
-import Footer from '../Footer';
+/* eslint-disable react/jsx-filename-extension */
+import React from 'react'
+import { shallow } from 'enzyme'
+import Footer from '.'
 
 it('renders without crashing', () => {
-  expect(shallow(<Footer />));
-});
+  expect(shallow(<Footer />))
+})

@@ -3,4 +3,4 @@ module.exports = {
     'postcss-import': {},
     'postcss-cssnext': {},
   },
-};
+}
