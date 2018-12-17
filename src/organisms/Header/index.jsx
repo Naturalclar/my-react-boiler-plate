@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { Logo, HeaderItem } from '../../atoms'
 
 const StyledHeader = styled.header`
   background: black;
@@ -11,29 +12,10 @@ const StyledHeader = styled.header`
   position: relative;
 `
 
-const HeaderLogo = styled.div`
-  flex: 1;
-  font-size: 1.5rem;
-  padding: 1rem;
-  font-weight: lighter;
-`
-
-const HeaderItem = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  height: 4rem;
-  transition: all 0.2s;
-  cursor: pointer;
-  &:hover {
-    background: rgba(255, 255, 255, 0.2);
-  }
-`
-
+// TODO: prop validation with typescript
 const Header = ({ title }) => (
   <StyledHeader>
-    <HeaderLogo>{title}</HeaderLogo>
+    <Logo>{title}</Logo>
     <HeaderItem key="item1">item</HeaderItem>
     <HeaderItem key="item2">item</HeaderItem>
   </StyledHeader>
