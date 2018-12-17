@@ -1,5 +1,5 @@
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -17,10 +17,6 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
-        query: {
-          presets: ['env', 'react'],
-          plugins: ['transform-object-rest-spread'],
-        },
       },
       {
         test: /\.css$/,
@@ -53,4 +49,4 @@ module.exports = {
       template: 'src/index.html',
     }),
   ],
-};
+}
