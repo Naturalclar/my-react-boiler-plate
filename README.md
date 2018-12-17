@@ -1,5 +1,7 @@
 # React Boiler Plate
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Naturalclar/my-react-boiler-plate.svg)](https://greenkeeper.io/)
+
 Yet another one out of the millions of react-redux-boilerplates that exists out there.
 
 ## Usage
