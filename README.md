@@ -1,8 +1,6 @@
-# React Boiler Plate
+# React Boiler Plate [![CircleCI](https://circleci.com/gh/Naturalclar/my-react-boiler-plate.svg?style=shield)](https://circleci.com/gh/Naturalclar/my-react-boiler-plate)[![Greenkeeper badge](https://badges.greenkeeper.io/Naturalclar/my-react-boiler-plate.svg)](https://greenkeeper.io/)
 
-[![CircleCI](https://circleci.com/gh/Naturalclar/my-react-boiler-plate.svg?style=shield)](https://circleci.com/gh/Naturalclar/my-react-boiler-plate)[![Greenkeeper badge](https://badges.greenkeeper.io/Naturalclar/my-react-boiler-plate.svg)](https://greenkeeper.io/)
-
-Yet another one out of the millions of react-redux-boilerplates that exists out there.
+Boilerplate for react-redux project
 
 ## Usage
 
