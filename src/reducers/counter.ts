@@ -1,4 +1,9 @@
-const counter = (state = 0, action) => {
+type Action = {
+  type: string
+  payload: any
+}
+
+const counter = (state = 0, action: Action) => {
   switch (action.type) {
     case 'SET_COUNTER':
       return action.payload

@@ -14,6 +14,8 @@ const StyledFooter = styled.footer`
   height: 2rem;
 `
 
-const Footer = () => <StyledFooter>React-Boilerplate by Smashcat</StyledFooter>
+const Footer: React.FC = () => (
+  <StyledFooter>React-Boilerplate by Smashcat</StyledFooter>
+)
 
 export default Footer

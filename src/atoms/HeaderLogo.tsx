@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import React from 'react'
 import styled from 'styled-components'
 
@@ -8,7 +7,13 @@ const StyledLogo = styled.div`
   padding: 1rem;
   font-weight: lighter;
 `
-// TODO: props validation with typescript
-const Logo = ({ children }) => <StyledLogo>{children}</StyledLogo>
+
+interface LogoInterface {
+  children: React.ReactChild
+}
+
+const Logo: React.FC<LogoInterface> = ({ children }) => (
+  <StyledLogo>{children}</StyledLogo>
+)
 
 export default Logo

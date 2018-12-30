@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import React from 'react'
 import styled from 'styled-components'
 import { Header, Footer } from '../../organisms'
@@ -14,8 +13,12 @@ const Body = styled.main`
   padding-bottom: 2rem;
 `
 
-// TODO: prop validation with typescript
-const PageTemplate = ({ title, children }) => (
+interface PageTemplateInterface {
+  title: string
+  children: React.ReactNode
+}
+
+const PageTemplate: React.FC<PageTemplateInterface> = ({ title, children }) => (
   <Container>
     <Header title={title} />
     <Body>{children}</Body>

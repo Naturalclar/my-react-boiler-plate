@@ -1,11 +1,8 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
+import { Dispatch } from 'redux'
 import styled from 'styled-components'
-import Cat from '../../assets/images/img_cat.svg'
-import Increment from '../../assets/images/img_increment.svg'
-import Decrement from '../../assets/images/img_decrement.svg'
-import Reset from '../../assets/images/img_reset.svg'
+import { Cat, Increment, Decrement, Reset } from '../../assets/images'
 import { increment, decrement, reset } from '../../actions'
 
 const HomeContainer = styled.div`
@@ -37,36 +34,45 @@ const HomeButton = styled.img`
   }
 `
 
-const Home = ({ counter, dispatch }) => {
+interface HomeInterface {
+  counter: number
+  increment: () => void
+  decrement: () => void
+  reset: () => void
+}
+
+const Home: React.FC<HomeInterface> = ({
+  counter,
+  increment,
+  decrement,
+  reset,
+}) => {
   const filter = `invert(0.5) sepia(1) hue-rotate(${counter * 5}deg)`
   return (
     <HomeContainer>
       <img src={Cat} alt="cat" style={{ filter }} />
       <HomeDisplayCount>{counter}</HomeDisplayCount>
       <HomeButtonList>
-        <HomeButton
-          key="increment"
-          src={Increment}
-          onClick={() => dispatch(increment())}
-        />
-        <HomeButton
-          key="decrement"
-          src={Decrement}
-          onClick={() => dispatch(decrement())}
-        />
-        <HomeButton key="reset" src={Reset} onClick={() => dispatch(reset())} />
+        <HomeButton key="increment" src={Increment} onClick={increment} />
+        <HomeButton key="decrement" src={Decrement} onClick={decrement} />
+        <HomeButton key="reset" src={Reset} onClick={reset} />
       </HomeButtonList>
     </HomeContainer>
   )
 }
 
-Home.propTypes = {
-  counter: PropTypes.number.isRequired,
-  dispatch: PropTypes.func.isRequired,
-}
-
-const mapStateToProps = style => ({
+// TODO: set type for state
+const mapStateToProps = (style: any) => ({
   counter: style.counter,
 })
 
-export default connect(mapStateToProps)(Home)
+const mapDispatchToProps = (dispatch: Dispatch) => ({
+  increment: () => dispatch(increment()),
+  decrement: () => dispatch(decrement()),
+  reset: () => dispatch(reset()),
+})
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Home)

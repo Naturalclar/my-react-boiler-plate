@@ -4,5 +4,5 @@ import { shallow } from 'enzyme'
 import Header from '.'
 
 it('renders without crashing', () => {
-  expect(shallow(<Header />))
+  expect(shallow(<Header title="foo" />))
 })

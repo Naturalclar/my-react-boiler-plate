@@ -1,8 +1,8 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react'
 import { shallow } from 'enzyme'
-import PageTemplate from '.'
+import App from '../App'
 
 it('renders without crashing', () => {
-  expect(shallow(<PageTemplate />))
+  expect(shallow(<App />))
 })

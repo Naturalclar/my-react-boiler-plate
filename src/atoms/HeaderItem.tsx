@@ -1,5 +1,4 @@
-/* eslint-disable react/prop-types */
-import React from 'react'
+import * as React from 'react'
 import styled from 'styled-components'
 
 const Item = styled.div`
@@ -15,7 +14,12 @@ const Item = styled.div`
   }
 `
 
-// TODO: props validation with type script
-const HeaderItem = ({ children }) => <Item>{children}</Item>
+interface HeaderItemInterface {
+  children: React.ReactChild
+}
+
+const HeaderItem: React.FC<HeaderItemInterface> = ({ children }) => (
+  <Item>{children}</Item>
+)
 
 export default HeaderItem

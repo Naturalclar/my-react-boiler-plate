@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import { PageTemplate } from '../../templates'
 import { Counter } from '../../organisms'
 

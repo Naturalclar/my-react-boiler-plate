@@ -1,2 +1,2 @@
-export { default as Logo } from './Logo'
+export { default as HeaderLogo } from './HeaderLogo'
 export { default as HeaderItem } from './HeaderItem'

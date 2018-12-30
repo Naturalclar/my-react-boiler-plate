@@ -1,7 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import * as React from 'react'
 import styled from 'styled-components'
-import { Logo, HeaderItem } from '../../atoms'
+import { HeaderLogo, HeaderItem } from '../../atoms'
 
 const StyledHeader = styled.header`
   background: black;
@@ -12,10 +11,13 @@ const StyledHeader = styled.header`
   position: relative;
 `
 
-// TODO: prop validation with typescript
-const Header = ({ title }) => (
+interface HeaderInterface {
+  title: string
+}
+
+const Header: React.FC<HeaderInterface> = ({ title }) => (
   <StyledHeader>
-    <Logo>{title}</Logo>
+    <HeaderLogo>{title}</HeaderLogo>
     <HeaderItem key="item1">item</HeaderItem>
     <HeaderItem key="item2">item</HeaderItem>
   </StyledHeader>
@@ -23,10 +25,6 @@ const Header = ({ title }) => (
 
 Header.defaultProps = {
   title: 'Title',
-}
-
-Header.propTypes = {
-  title: PropTypes.string,
 }
 
 export default Header
