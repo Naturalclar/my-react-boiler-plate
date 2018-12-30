@@ -6,6 +6,16 @@ module.exports = {
     browser: true,
     jest: true,
   },
-  parser: 'babel-eslint',
-  extends: ['airbnb', 'plugin:prettier/recommended'],
+  parser: 'typescript-eslint-parser',
+  parserOptions: {
+    jsx: true,
+    useJSXTextNode: true,
+  },
+  plugins: ['typescript'],
+  extends: ['airbnb', 'plugin:prettier/recommended', 'prettier/react'],
+  settings: {
+    node: {
+      extensions: ['.js', '.jsx', '.ts', '.tsx'],
+    },
+  },
 }
