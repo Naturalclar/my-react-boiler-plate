@@ -6,7 +6,7 @@ module.exports = {
   entry: `${__dirname}/src/index.jsx`,
   output: {
     path: `${__dirname}/public`,
-    filename: 'bundle.js',
+    filename: 'bundle.[contentHash].js',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
