@@ -13,6 +13,6 @@ app.listen(port, error => {
   if (error) {
     console.error(error)
   } else {
-    console.log(`Server running at localhost:${port}`)
+    console.log(`Server running at http://localhost:${port}`)
   }
 })
