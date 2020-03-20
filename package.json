@@ -14,7 +14,7 @@
     "lint": "eslint src server"
   },
   "dependencies": {
-    "@babel/register": "7.7.7",
+    "@babel/register": "7.9.0",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
     "express": "^4.16.4",
