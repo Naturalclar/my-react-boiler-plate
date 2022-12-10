@@ -17,7 +17,7 @@
     "@babel/register": "7.7.7",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "firebase": "^7.6.1",
     "normalize.css": "^8.0.0",
     "postcss": "^7.0.7",
